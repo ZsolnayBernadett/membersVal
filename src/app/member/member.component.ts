@@ -1,5 +1,13 @@
+/*
+* Author: Zsolnai Bernadett
+* Group: Szoft II N
+* Date: 2022-03-31
+* Github: https://github.com
+* Licenc: GNU GPL
+*/
+
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-member',
@@ -18,6 +26,12 @@ export class MemberComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.memberForm = new FormGroup({
+      name: new FormControl('', Validators.required),
+      city: new FormControl('', Validators.required),
+      address: new FormControl('', Validators.required),
+      email: new FormControl('', [Validators.required, Validators.email])
+    })
   }
 
   saveMember() {

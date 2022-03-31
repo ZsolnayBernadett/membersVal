@@ -1,0 +1,15 @@
+/*
+* Author: Zsolnai Bernadett
+* Group: Szoft II N
+* Date: 2022-03-31
+* Github: https://github.com
+* Licenc: GNU GPL
+*/
+
+input.ng-invalid {
+    border-left: 10px solid red;
+}
+
+input.ng-valid {
+    border-left: 10px solid green;
+}

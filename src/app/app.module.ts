@@ -1,3 +1,11 @@
+/*
+* Author: Zsolnai Bernadett
+* Group: Szoft II N
+* Date: 2022-03-31
+* Github: https://github.com
+* Licenc: GNU GPL
+*/
+
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
